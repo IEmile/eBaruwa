@@ -1,0 +1,34 @@
+{
+  "name": "ebaruwa.com",
+  "version": "2.0.0",
+  "description": "A story blog. view story,Buy some books",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ishimwe Emile******IEmile.co",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.3.0",
+    "nodemailer": "^6.9.9",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "sharp": "^0.33.2",
+    "uuid": "^9.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IEmile/eBaruwa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IEmile/eBaruwa/issues"
+  },
+  "homepage": "https://github.com/IEmile/eBaruwa#readme"
+}
