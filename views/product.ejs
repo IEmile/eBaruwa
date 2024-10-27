@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/product.css">
     <title>Document</title>
@@ -10,56 +11,86 @@
 <body>
     <header></header>
     <main>
-        <section id="product">
-            <div id="add-product-info">
-                <fieldset>
-                    <legend>Product name</legend>
-                    <input type="text" name="" id="">
-                </fieldset>
-                <fieldset>
-                    <legend>Product description</legend>
-                    <textarea name="" id=""></textarea>
-                    <p>
-                        Give as much detail as posible to help with discovery. Only the first 175 characters will be shown on the main store page.
-                    </p>
-                </fieldset>
-                <!-- <fieldset>
-                    <legend></legend>
-                </fieldset> -->
-                <div id="price">
+        <section id="product-info">
+            <span><h1>Add a new product to the store </h1><i id="show1" class="bi bi-list-task"></i></span>
+            <div id="product" class="customer-table">
+                <div id="add-product-info">
                     <fieldset>
-                        <legend>New price</legend>
+                        <legend>Product name</legend>
                         <input type="text" name="" id="">
                     </fieldset>
                     <fieldset>
-                        <legend>Old price <i>i</i></legend>
+                        <legend>Product description</legend>
+                        <textarea name="" id=""></textarea>
+                        <p>
+                            Give as much detail as posible to help with discovery. Only the first 175 characters will be shown on the main store page.
+                        </p>
+                    </fieldset>
+                    <div id="price">
+                        <fieldset>
+                            <legend>New price</legend>
+                            <input type="text" name="" id="">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Old price <i>i</i></legend>
+                            <input type="text" name="" id="">
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>Number of items in stock</legend>
                         <input type="text" name="" id="">
+                        <p>
+                            This data will be used to to notify if the products are still in the stock or exosted.
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>International categories</legend>
+                        <input type="text" name="" id="">
+                        <p>
+                            This categories are used to specify the orgin of the product. Most of the time it mentiones were it was produced from.
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Items classfication</legend>
+                        <select name="" id=""></select>
                     </fieldset>
                 </div>
-                <fieldset>
-                    <legend>Number of items in stock</legend>
-                    <input type="text">
-                </fieldset>
-                <fieldset>
-                    <legend>International categories</legend>
-                    <input type="text" name="" id="">
-                </fieldset>
-                <fieldset>
-                    <legend>Items classfication</legend>
-                    <select name="" id=""></select>
-                </fieldset>
-            </div>
-            <div id="add-product-content">
-                <div class="drop-img">
-                    d
+                <div id="add-product-content">
+                    <div class="drop-img">
+                        <img id="icon" src="/assets/post.svg" alt="drop file">
+                        <p>Drag image & content here or click to upload</p>
+                        <p>maximum of 5 media items</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="pending-product">
-
+        <section id="sold-product">
+            <span><h1>Check out your customers </h1><i id="show2" class="bi bi-list-task "></i></span>
+            <div class="customer-table">
+                <div id="nav-filter">
+                    <p>Show <input type="number" name="" id=""> entities</p>
+                </div>
+                <div id="customer">
+                    <div>
+                        Selling Date
+                    </div>
+                    <div>
+                        Customer Name
+                    </div>
+                    <div>
+                        Customer Email
+                    </div>
+                    <div>1</div>
+                </div>
+                <div>
+                    <p>Showing from 1 to 10 of 57</p>
+                    paging
+                </div>
+            </div>
         </section>
-        <section id="sold-product"></section>
     </main>
     <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/product.js"></script>
 </body>
 </html>
