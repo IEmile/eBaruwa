@@ -24,7 +24,14 @@ app.listen(3000, ()=>{
 app.get('/signin', (req,res)=>{
     res.render('signup')
 })
-
+// working on user posts books articles we will user the userID only which is set in cookies or session 
+app.put('/user',(req,res)=>{
+    if(userSession){
+        const doc=await db
+        // add  file in sever and article 
+    }
+})
+// end of update
 app.get('/',(req,res)=>{
     res.render('index');
 })
